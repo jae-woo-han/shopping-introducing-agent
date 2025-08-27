@@ -1,0 +1,28 @@
+hotdeal_harvesting_task:
+  description: >
+    {goods}에 대해서 판매 중인 쇼핑몰링크를 수집합니다.
+    
+    다음 순서를 따름:
+    1. {goods} 판매 정보는 search tool을 사용하여 검색합니다.
+    2. 검색 결과에 대하여, URLs이 신뢰할 수 있는지 확인합니다.
+  expected_output: >
+    상품 분류에 따라서 다음과 같은 형식으로 응답을 줍니다.
+
+    # 다음 상품에 대한 검색 결과: {goods}
+
+    **Collection Summary**
+    - Total Sale Info found:
+    - Sale Info after filtering:
+    - Duplicates removed:
+    - Sources accessed:
+    - Search queries used:
+    - Search timestamp:
+
+    ---
+
+    ## 판매 상품 1: [상품 명]
+      - [http://쇼핑몰주소1] 판매가 100000원
+      - [http://쇼핑몰주소2] 판매매가 100090원
+
+    [모든 상품의 목록은 이 문서 형식을 사용합니다.]
+  agent: hotdeal_harvesting_agent
