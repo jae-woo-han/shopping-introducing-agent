@@ -27,3 +27,7 @@ task를 세분화하자.
 1. 상품 판매 정보 수집
 2. 상품 판매 정보 검증(제대로 된 링크인지, 접속시간, 현재 판매중인 상품인지 등)
 3. 상품 판매 정보 요약
+
+## 참고
+- [CrewAI LLMS Documents](https://docs.crewai.com/ko/concepts/llms)
+  - dotenv 사용했을 때 자동으로 API 설정되는 부분에 대한 설명
